@@ -8,10 +8,15 @@ module.exports = (robot) ->
 
     fault = (msg) ->
       res.end "1:"+msg
+
+
+    if !query.message
+      fault("no message")
       return
 
-    fault("no message") if !query.message
-    fault("no room")    if !query.room
+    if !query.room
+      fault("no room")
+      return
 
     send = (room, msg) ->
       response = new robot.Response(robot, {user : {id : -1, name : room}, text : "none", done : false}, [])
