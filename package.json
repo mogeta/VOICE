@@ -1,9 +1,10 @@
 {
-    "name": "VOICE"
-    , "version": "0.0.1"
-    , "private": true
-    , "dependencies": {
-       "hubot":">=2.4.7"
-     , "hubot-irc": ">=0.1.10"
-    }
+	"name": "VOICE"
+	, "version": "0.0.1"
+	, "private": true
+	, "dependencies": {
+		"coffee-script":"*"
+		,  "hubot":">=2.4.7"
+		, "hubot-irc": ">=0.1.10"
+	}
 }
